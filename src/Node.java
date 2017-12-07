@@ -14,6 +14,12 @@ public class Node implements Comparable<Node>{
         this.nr = nr;
     }
 
+    public Node(){
+        firstEdge = null;
+        nr = 0;
+        data = null;
+    }
+
     public int getNr() {
         return nr;
     }
