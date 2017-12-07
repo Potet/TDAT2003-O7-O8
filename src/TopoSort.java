@@ -44,7 +44,8 @@ public class TopoSort {
         for(Edge e = n.getFirstEdge(); e!=null; e = e.getNextEdge()){
             l = df_topo(e.getToNode(),l);
         }
-        return l;
+        nd.nextNode = l;
+        return n;
     }
     Node topoSort(){
         Node l = null;
